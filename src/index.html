@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fighters</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="/dist/style.css" />
+	</head>
+	<body>
+		<div class="relative inline-block">
+			<div class="absolute flex w-full items-center p-5">
+				<div class="relative flex w-full justify-end border-y-4 border-l-4 border-white">
+					<div class="h-8 w-full bg-red-500"></div>
+					<div id="playerHealth" class="absolute top-0 right-0 bottom-0 w-full bg-indigo-400"></div>
+				</div>
+				<div id="timer" class="flex h-12 w-24 shrink-0 items-center justify-center border-4 border-white bg-black text-white">10</div>
+				<div class="relative w-full border-y-4 border-r-4 border-white">
+					<div class="h-8 bg-red-500"></div>
+					<div id="enemyHealth" class="absolute inset-0 bg-indigo-400"></div>
+				</div>
+			</div>
+			<div id="displayText" class="absolute inset-0 hidden text-white"></div>
+			<canvas></canvas>
+		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+			integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script type="module" src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+{
+	"name": "fighters",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./src/index.js",
+	"scripts": {
+		"start": "npx tailwindcss -i ./src/assets/css/index.css -o ./dist/style.css --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"prettier": "^2.6.1",
+		"prettier-plugin-tailwindcss": "^0.1.8",
+		"tailwindcss": "^3.0.23"
+	}
+}
